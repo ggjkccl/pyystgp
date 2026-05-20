@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NZ Relax Massage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Earn Extra Income From Home</title>
 
   <style>
     *{
@@ -14,66 +14,54 @@
     }
 
     body{
-      background:#f7f7f7;
+      background:#f5f7fa;
       color:#222;
-      overflow-x:hidden;
+      line-height:1.6;
     }
 
     .hero{
+      position:relative;
       height:100vh;
       background:
-        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
-        url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1600&auto=format&fit=crop');
+      linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+      url('https://images.unsplash.com/photo-1507699622108-4be3abd695ad?q=80&w=1600&auto=format&fit=crop');
       background-size:cover;
       background-position:center;
       display:flex;
       align-items:center;
       justify-content:center;
       text-align:center;
+      color:#fff;
       padding:20px;
     }
 
     .hero-content{
-      max-width:700px;
-      color:white;
-      animation:fadeIn 1.2s ease;
+      max-width:800px;
     }
 
-    .badge{
-      display:inline-block;
-      background:#00b67a;
-      padding:8px 18px;
-      border-radius:999px;
-      font-size:14px;
+    .hero h1{
+      font-size:56px;
       margin-bottom:20px;
-      font-weight:bold;
+      font-weight:700;
     }
 
-    h1{
-      font-size:54px;
-      line-height:1.1;
-      margin-bottom:20px;
-      font-weight:800;
-    }
-
-    .sub{
-      font-size:20px;
-      line-height:1.6;
+    .hero p{
+      font-size:22px;
       margin-bottom:35px;
-      color:#f2f2f2;
+      color:#f1f1f1;
     }
 
     .cta-btn{
       display:inline-block;
       background:#25D366;
-      color:white;
+      color:#fff;
+      padding:18px 40px;
+      font-size:20px;
       text-decoration:none;
-      padding:18px 38px;
-      border-radius:999px;
-      font-size:22px;
+      border-radius:50px;
+      transition:0.3s;
       font-weight:bold;
-      transition:.3s;
-      box-shadow:0 8px 25px rgba(0,0,0,.25);
+      box-shadow:0 8px 20px rgba(0,0,0,0.2);
     }
 
     .cta-btn:hover{
@@ -87,109 +75,85 @@
       margin:auto;
     }
 
-    .title{
+    .section-title{
       text-align:center;
-      font-size:40px;
       margin-bottom:50px;
-      color:#111;
-      font-weight:800;
+    }
+
+    .section-title h2{
+      font-size:40px;
+      color:#0b3d2e;
+      margin-bottom:15px;
     }
 
     .features{
       display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-      gap:25px;
+      grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+      gap:30px;
     }
 
     .card{
-      background:white;
+      background:#fff;
       padding:35px;
-      border-radius:24px;
-      box-shadow:0 10px 25px rgba(0,0,0,.08);
-      transition:.3s;
-    }
-
-    .card:hover{
-      transform:translateY(-6px);
-    }
-
-    .icon{
-      font-size:42px;
-      margin-bottom:20px;
+      border-radius:20px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.08);
+      text-align:center;
     }
 
     .card h3{
-      font-size:24px;
       margin-bottom:15px;
+      color:#0b3d2e;
+      font-size:24px;
     }
 
-    .card p{
-      color:#555;
-      line-height:1.7;
-    }
-
-    .banner{
-      background:#0f172a;
-      color:white;
+    .nz-section{
+      background:#0b3d2e;
+      color:#fff;
       text-align:center;
-      padding:90px 20px;
+      padding:80px 20px;
     }
 
-    .banner h2{
+    .nz-section h2{
       font-size:42px;
       margin-bottom:20px;
     }
 
-    .banner p{
-      max-width:700px;
+    .nz-section p{
+      max-width:800px;
       margin:auto;
-      line-height:1.8;
+      font-size:20px;
       margin-bottom:35px;
-      color:#ddd;
-      font-size:18px;
     }
 
     footer{
       background:#111;
-      color:#999;
+      color:#aaa;
       text-align:center;
       padding:25px;
       font-size:14px;
     }
 
-    @keyframes fadeIn{
-      from{
-        opacity:0;
-        transform:translateY(20px);
-      }
-      to{
-        opacity:1;
-        transform:translateY(0);
-      }
-    }
-
     @media(max-width:768px){
-      h1{
+
+      .hero h1{
         font-size:38px;
       }
 
-      .sub{
+      .hero p{
         font-size:18px;
       }
 
       .cta-btn{
         font-size:18px;
-        padding:16px 28px;
+        padding:15px 30px;
       }
 
-      .title{
-        font-size:30px;
-      }
-
-      .banner h2{
+      .section-title h2{
         font-size:32px;
       }
+
     }
+
   </style>
 </head>
 
@@ -198,106 +162,81 @@
   <!-- HERO -->
   <section class="hero">
     <div class="hero-content">
+      <h1>Earn Extra Income From Home</h1>
 
-      <div class="badge">
-        🇳🇿 New Zealand Premium Experience
-      </div>
-
-      <h1>
-        Relax Smarter.<br>
-        Feel Better.
-      </h1>
-
-      <p class="sub">
-        Inspired by New Zealand’s natural calm and modern lifestyle.
-        Soft-touch comfort, intelligent warming, and immersive relaxation —
-        designed for private premium enjoyment.
+      <p>
+        New Zealand families are discovering smarter ways to earn online.
+        Work from the comfort of your home and create multiple streams of income.
       </p>
 
-      <!-- 修改你的WhatsApp号码 -->
-      <a
-        class="cta-btn"
-        href="https://wa.me/642100000000"
-        target="_blank"
-      >
-        Chat on WhatsApp
+      <!-- 替换成你的WhatsApp号码 -->
+      <a class="cta-btn" href="https://wa.me/642100000000" target="_blank">
+        Join WhatsApp Now
       </a>
-
     </div>
   </section>
 
   <!-- FEATURES -->
   <section class="section">
 
-    <h2 class="title">
-      Why People Love It
-    </h2>
+    <div class="section-title">
+      <h2>Why Thousands Are Starting Online</h2>
+      <p>
+        Rising living costs in New Zealand mean many people are looking for flexible income opportunities.
+      </p>
+    </div>
 
     <div class="features">
 
       <div class="card">
-        <div class="icon">🔥</div>
-        <h3>Smart Heating</h3>
+        <h3>🏡 Work From Home</h3>
         <p>
-          Intelligent constant temperature technology provides a warm,
-          soothing and relaxing experience.
+          No commuting. No office pressure. Work comfortably from anywhere in New Zealand.
         </p>
       </div>
 
       <div class="card">
-        <div class="icon">💎</div>
-        <h3>Premium Soft Material</h3>
+        <h3>⏰ Flexible Schedule</h3>
         <p>
-          Skin-friendly texture with a luxurious touch,
-          designed for comfort and safety.
+          Perfect for students, parents, and full-time workers looking for extra income.
         </p>
       </div>
 
       <div class="card">
-        <div class="icon">🌊</div>
-        <h3>Easy To Clean</h3>
+        <h3>💻 Beginner Friendly</h3>
         <p>
-          Waterproof and simple maintenance makes every use more convenient
-          and hygienic.
+          Simple online systems and step-by-step guidance make it easy to start.
         </p>
       </div>
 
       <div class="card">
-        <div class="icon">⚡</div>
-        <h3>Hands-Free Relaxation</h3>
+        <h3>💰 Extra Weekly Income</h3>
         <p>
-          Powerful vibration modes help you fully relax anytime,
-          anywhere in total privacy.
+          Build additional income streams to support your lifestyle and future goals.
         </p>
       </div>
 
     </div>
+
   </section>
 
-  <!-- CTA BANNER -->
-  <section class="banner">
+  <!-- NEW ZEALAND STYLE SECTION -->
+  <section class="nz-section">
 
-    <h2>
-      Experience New Zealand Style Relaxation
-    </h2>
+    <h2>Built For The New Zealand Lifestyle 🇳🇿</h2>
 
     <p>
-      Minimalist design, premium comfort and modern lifestyle aesthetics —
-      crafted for people who value quality and private relaxation.
+      Whether you're in Auckland, Wellington, Christchurch, or working remotely near the beautiful beaches and mountains of New Zealand — online income opportunities are becoming the new normal.
     </p>
 
-    <a
-      class="cta-btn"
-      href="https://facebook.com/"
-      target="_blank"
-    >
-      Order via WhatsApp
+    <a class="cta-btn" href="https://facebook.com/" target="_blank">
+      Start Today On WhatsApp
     </a>
 
   </section>
 
   <footer>
-    © 2026 NZ Relax. All rights reserved.
+    © 2026 Online Income Opportunity | New Zealand
   </footer>
 
 </body>
